@@ -42,15 +42,15 @@ export function PasswordGeneratorComponent() {
   }
 
   const getStrengthColor = () => {
+    if (length > 25) return "bg-lime-900"
     if (length >= 14) return "bg-lime-500"
-    if (length >= 25) return "bg-lime-900"
     if (length >= 8) return "bg-yellow-500"
     return "bg-red-500"
   }
 
   const getStrengthText = () => {
+    if (length > 25) return "NAJLEPSZE"
     if (length >= 14) return "Silne"
-    if (length >= 25) return "NAJLEPSZE"
     if (length >= 8) return "Dobre"
     return "Słabe"
   }
