@@ -14,7 +14,6 @@ export function PasswordGeneratorComponent() {
   const [useNumbers, setUseNumbers] = useState(true)
   const [useSpecialChars, setUseSpecialChars] = useState(true)
   const [notification, setNotification] = useState("")
-  const [mounted, setMounted] = useState(false)
 
   const generatePassword = () => {
     const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
